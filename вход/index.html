@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango - Мебель</title>
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <script src="./assest/js/main.js" defer></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">Mango</div>
+        <div class="burger-menu">☰</div>
+    </header>
+
+    <section class="banner">
+        <h1>Акционные товары</h1>
+        <img src="./assest/image/img1.webp" alt="Акции">
+    </section>
+
+    <section class="catalog">
+        <h2>Наши товары</h2>
+        <div class="product-card">
+            <img src="./assest/image/img2.jpg" alt="Товар 1">
+            <h3>Товар 1</h3>
+            <p>Цена: 1000 ₽</p>
+            <button>В корзину</button>
+        </div>
+        <div class="product-card">
+            <img src="./assest/image/img3.webp" alt="Товар 2">
+            <h3>Товар 2</h3>
+            <p>Цена: 1500 ₽</p>
+            <button>В корзину</button>
+        </div>
+        <div class="product-card">
+            <img src="./assest/image/img4.webp" alt="Товар 3">
+            <h3>Товар 3</h3>
+            <p>Цена: 2000 ₽</p>
+            <button>В корзину</button>
+        </div>
+        <div class="product-card">
+            <img src="assest/image/img5.webp" alt="Товар 4">
+            <h3>Товар 4</h3>
+            <p>Цена: 2500 ₽</p>
+            <button>В корзину</button>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2>Отзывы наших клиентов</h2>
+        <div class="review-card">
+            <p>"Отличная мебель, очень доволен покупкой!" - Иван П.</p>
+        </div>
+        <div class="review-card">
+            <p>"Качество на высшем уровне, рекомендую!" - Анна С.</p>
+        </div>
+        <div class="review-card">
+            <p>"Быстрая доставка и вежливый сервис." - Сергей К.</p>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <h2>Подписывайтесь на наши новости!</h2>
+        <form id="subscribe-form">
+            <input type="email" placeholder="Введите ваш email" required>
+            <button type="submit">Подписаться</button>
+        </form>
+    </section>
+
+    <section class="about-us">
+        <h2>О нас</h2>
+        <p>Мы - компания Mango, специализирующаяся на продаже качественной мебели.</p>
+        <img src="./assest/image/img6.jpg" alt="О нас">
+    </section>
+
+    <section class="faq">
+        <h2>Ответы на вопросы</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-title">Как сделать заказ?</div>
+                <div class="accordion-content">Вы можете сделать заказ через наш сайт или по телефону.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">Как вернуть товар?</div>
+                <div class="accordion-content">Для возврата товара свяжитесь с нашей службой поддержки.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">Mango</div>
+        <div class="contact-info">
+            <button id="phone-button">📞 Позвонить</button>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Телефон: +7 (999) 123-45-67</p>
+            <a href="tel:+79991234567"><button>Позвонить</button></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

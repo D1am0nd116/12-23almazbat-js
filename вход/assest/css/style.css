@@ -1,0 +1,160 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe0b2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff0000, #ff9100);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fbff00;
+}
+
+.burger-menu {
+    font-size: 28px;
+    color: #fbff00;
+}
+
+.banner {
+    text-align: center;
+    background-color: #ffcb3b;
+    padding: 40px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.banner h1 {
+    color: #d50000;
+    font-size: 36px;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+    border-radius: 10px;
+}
+
+.reviews, .subscribe, .about-us, .faq {
+    padding: 20px;
+}
+
+.review-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #ffb84e;
+}
+.subscribe form {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff5722; 
+}
+
+.subscribe button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ff5722; 
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.about-us img {
+    border-radius: 10px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-title {
+    cursor: pointer;
+    background-color: #ffa600;
+    color: #fff; 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ff5722;
+}
+
+.footer-logo {
+    font-size: 24px;
+    color: #fff; /* Белый текст */
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+body {
+   animation: fadeIn 1s ease-in-out;
+}
